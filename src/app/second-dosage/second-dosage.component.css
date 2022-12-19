@@ -1,0 +1,118 @@
+.layout {
+  border: 1px solid #9a9ea6;
+  height: auto;
+  width: 30rem;
+  padding: 0rem;
+  box-shadow: 8px 8px 32px 32px #dff5f2;
+}
+
+.taskDisplay {
+  display: flex;
+}
+
+.label {
+  color: grey;
+  font-size: larger;
+}
+
+.data {
+  font-size: larger;
+}
+
+.doseLabel {
+  color: red;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.doseData {
+  color: red;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.background-color {
+  background-color: #dff5f2;
+  height: 2rem;
+}
+
+.container2 {
+  margin-left: 8rem;
+}
+
+.dosagePage {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+.container1 {
+  margin-left: 5rem;
+}
+
+.checkbox {
+  margin-left: 11rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.title {
+  margin-top: 0;
+  background-color: #057a7c;
+  text-align: center;
+  color: white;
+  height: 3rem;
+  padding-top: 1rem;
+}
+
+.rememberMe {
+  font-family: "Handlee", cursive;
+}
+
+.logout {
+  border: none;
+  background-color: white;
+  width: 4rem;
+  height: 4rem;
+}
+
+.logout-button {
+  display: flex;
+  align-content: flex-end;
+  background-color: white;
+  border: none;
+  margin-left: 100rem;
+}
+
+.date {
+  margin-top: 1rem;
+  display: block;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  width: 13.5rem;
+}
+
+.button {
+  background-color: #035d5d;
+  color: #ffffff;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  margin-left: 15rem;
+  margin-top: 3rem;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.reg-layout {
+  border: 1px solid #9a9ea6;
+  height: auto;
+  width: 40.5rem;
+  padding: 0rem;
+  box-shadow: 8px 8px 32px 32px #dff5f2;
+}

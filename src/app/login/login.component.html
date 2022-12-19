@@ -1,0 +1,54 @@
+<div class="split left">
+  <div class="centered">
+    <div class="form">
+      <form class="form-page">
+        <h4 class="form-title">Login</h4>
+        <input
+          class="form-input"
+          [(ngModel)]="Email"
+          name="Email"
+          type="email"
+          placeholder="Email"
+        />
+        <input
+          class="form-input"
+          [(ngModel)]="Password"
+          name="Password"
+          type="password"
+          placeholder="Password"
+        />
+        <section class="form-button-layout">
+          <input
+            type="submit"
+            class="form-button"
+            (click)="userExists()"
+            value="Submit"
+          />
+          <br />
+          <div class="forgot-area">
+            <small
+              ><a class="forgotpassword" href="forgotPassword"
+                >Forgot Password?</a
+              ></small
+            >
+          </div>
+          <br />
+        </section>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="split right">
+  <div class="centered">
+    <div class="image-layout">
+      <img
+        class="image"
+        src="https://s3.amazonaws.com/cms.ipressroom.com/173/files/20210/601321882cfac24d722c5501_Dec+email2/Dec+email2_hero.jpg"
+      />
+    </div>
+  </div>
+</div>
+<div class="popup" *ngIf="toggleStatus == true">
+  <app-popup [toggleStatus]="Toggle" [error]="message"></app-popup>
+</div>

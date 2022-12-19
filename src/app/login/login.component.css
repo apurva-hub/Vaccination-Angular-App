@@ -1,0 +1,109 @@
+body {
+  background-color: white;
+}
+
+.form-page {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+
+.form-title {
+  display: flex;
+  justify-content: center;
+  color: #045d5d;
+  font-size: 2rem;
+  font-family: "Handlee", cursive;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  margin-top: -1rem;
+  width: 50vw;
+}
+
+.form-input {
+  width: 22rem;
+  height: 2.4rem;
+  border-radius: 1rem;
+  border: 1px solid black;
+  color: black;
+  font-size: large;
+  padding-left: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.form-button {
+  background-color: #045d5d;
+  color: white;
+  width: 12rem;
+  height: 3rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: large;
+  border: none;
+}
+
+.form-button-layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup {
+  z-index: 1;
+  position: absolute;
+  margin-top: 17rem;
+  background-color: black;
+  color: white;
+}
+
+.checkbox {
+  font-size: small;
+  font-family: "Handlee", cursive;
+  margin-bottom: 10px;
+}
+
+.forgot-area {
+  display: flex;
+  flex-direction: row;
+}
+
+.forgotpassword {
+  padding-left: 3px;
+}
+
+.or {
+  padding-left: 3px;
+}
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  background-color: white;
+}
+
+.right {
+  right: 0;
+  background-color: white;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}

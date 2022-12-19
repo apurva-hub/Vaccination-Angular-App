@@ -1,0 +1,57 @@
+.Modal {
+  display: flex;
+  justify-content: center;
+
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.Modal-content {
+  border: 2px black solid;
+  height: 20vh;
+  width: 30vw;
+  background-color: #007c7c;
+  margin-top: 11rem;
+}
+
+.Modal-button {
+  border: none;
+  background-color: #007c7c;
+}
+
+.button-img {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 10px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+
+.Modal-text {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-family: "Handlee", cursive;
+  color: white;
+}
+
+.goButton {
+  background-color: #007c7c;
+  border: none;
+  cursor: pointer;
+  margin-left: 29rem;
+}
+
+.go {
+  background-color: #007c7c;
+  cursor: pointer;
+  height: 2rem;
+  margin-top: 1rem;
+}

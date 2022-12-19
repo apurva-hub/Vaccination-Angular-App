@@ -1,0 +1,38 @@
+.form-button {
+  background-color: #045d5d;
+  color: white;
+  width: 15rem;
+  height: 4rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  font-size: larger;
+  border: none;
+  margin-left: 7rem;
+  font-family: "Handlee", cursive;
+  margin-bottom: 1.5rem;
+}
+
+.button-layout {
+  display: flex;
+  flex-direction: column;
+  padding-top: 18rem;
+  padding-left: 12rem;
+}
+
+.image {
+  height: 5rem;
+  width: 5rem;
+}
+
+.navbar {
+  background-color: #017f7e;
+  margin-top: 0px;
+}
+
+body {
+  background-image: url("https://media.istockphoto.com/id/1353819765/photo/3d-render-vaccine-against-covid-concept.jpg?s=612x612&w=0&k=20&c=hYs7oipbrEEL1SrFGD_8kNcP32VkUOgyMg1gW6VZjbw=");
+  background-repeat: no-repeat;
+  height: 98vh;
+  background-size: cover;
+  background-position: center;
+}

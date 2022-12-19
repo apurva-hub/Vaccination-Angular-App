@@ -1,0 +1,20 @@
+<div class="Modal">
+  <div class="Modal-content">
+    <div class="button-img">
+      <button class="Modal-button" (click)="toggle()">
+        <img
+          src="https://www.svgrepo.com/show/317810/actions-close-simple.svg"
+        />
+      </button>
+    </div>
+    <div class="Modal-text">{{ error }}</div>
+    <button
+      title="Go to Home page"
+      *ngIf="isValid"
+      class="goButton"
+      routerLink="/home"
+    >
+      <img class="go" src="https://www.svgrepo.com/show/387683/go-end.svg" />
+    </button>
+  </div>
+</div>

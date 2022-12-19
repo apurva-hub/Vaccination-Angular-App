@@ -1,0 +1,73 @@
+<button title="Logout" class="logout-button" (click)="logout()">
+  <img class="logout" src="https://www.svgrepo.com/show/199922/logout.svg" />
+</button>
+<div *ngIf="isRegistered" class="dosagePage">
+  <div class="layout">
+    <h1 class="title">Cowin</h1>
+    <div class="taskDisplay" *ngFor="let data of dosageData">
+      <div class="container1">
+        <label class="label">Name</label>
+        <p class="data">{{ data.name }}</p>
+        <label class="label">Age</label>
+        <p class="data">{{ data.age }}</p>
+        <label class="label">Gender</label>
+
+        <p *ngIf="data.gender" class="data">Female</p>
+        <p *ngIf="!data.gender" class="data">Male</p>
+
+        <label class="doseLabel">Dose 1</label>
+        <p class="doseData">{{ data.dosage1Date | date : "yyyy-MM-dd" }}</p>
+      </div>
+      <div class="container2">
+        <label class="label">Father Name</label>
+        <p class="data">{{ data.fatherName }}</p>
+        <label class="label">Phone No</label>
+        <p class="data">{{ data.phoneNo }}</p>
+        <label class="label">Aadhaar Number</label>
+        <p class="data">{{ data.aadhaarNumber }}</p>
+      </div>
+    </div>
+    <input (change)="changeStatus()" class="checkbox" type="checkbox" /><label
+      class="rememberMe"
+      >Remember Me</label
+    >
+  </div>
+</div>
+
+<div *ngIf="!isRegistered" class="dosagePage">
+  <div class="reg-layout">
+    <h1 class="title">Registration</h1>
+    <div class="taskDisplay">
+      <div class="container1">
+        <label class="form-label">Name</label>
+        <input [(ngModel)]="name" class="input" type="text" />
+        <label class="form-label">Age</label>
+        <input [(ngModel)]="age" class="input" max="100" type="number" />
+        <label class="form-label">Gender</label><br /><br />
+        <label class="form-label">Male</label>
+        <input value="false" [(ngModel)]="gender" type="radio" />
+        <label class="form-label">Female</label>
+        <input
+          value="true"
+          [(ngModel)]="gender"
+          checked
+          type="radio"
+        /><br /><br />
+        <label class="form-label">Dose1 Date</label>
+        <input [(ngModel)]="dose1Date" class="date" type="date" />
+      </div>
+      <div class="container2">
+        <label class="form-label">Father Name</label>
+        <input [(ngModel)]="fatherName" class="input" type="text" />
+        <label class="form-label">Phone No</label>
+        <input [(ngModel)]="phoneNo" class="input" type="number" min="10" />
+        <label class="form-label">Aadhaar Number</label>
+        <input [(ngModel)]="aadhaarNumber" class="input" type="number" />
+      </div>
+    </div>
+    <input class="button" (click)="register()" type="button" value="Submit" />
+  </div>
+</div>
+<div class="popup" *ngIf="toggleStatus == true">
+  <app-popup [toggleStatus]="Toggle" [error]="message"></app-popup>
+</div>
